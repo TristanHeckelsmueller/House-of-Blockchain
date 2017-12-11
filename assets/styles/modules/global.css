@@ -1,0 +1,15 @@
+/*GLOBAL CSS*/
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  margin: 0;
+  background: #F2F2F2;
+}
+p{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}

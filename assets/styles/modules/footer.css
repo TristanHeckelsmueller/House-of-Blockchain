@@ -1,0 +1,25 @@
+/*SITE FOOTER*/
+.site-footer{
+  width: 100%;
+  background: #363839;
+}
+.site-footer__column-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+.site-footer__column{
+  width: 33%;;
+  float: left;
+}
+.site-footer__column li, ul, a{
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.site-footer__column li{
+  padding-bottom: .8em;
+}
+.site-footer__column h3{
+  color: #59b307;
+}
