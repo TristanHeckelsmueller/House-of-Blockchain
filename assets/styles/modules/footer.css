@@ -6,6 +6,7 @@
 .site-footer__column-wrapper{
   width: 80%;
   margin: 0 auto;
+  padding: 3em 6em;
 }
 .site-footer__column{
   width: 33%;;
