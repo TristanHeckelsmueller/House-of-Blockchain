@@ -3,7 +3,7 @@
   width: 80%;
   margin: 0 auto;
   background: #fff;
-  padding: 1.2em;
+  padding: 3em 6em;
 }
 
 .main-content__column__inner{
@@ -22,10 +22,13 @@
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
+.main-content__column-img img{
+  width: 30%;
+}
+.main-content__column-img-top img{
+  right: 0;
+  float: right;
+}
+.main-content__column-img-bottom img{
 
-.main-content__column-logo img{
-  left: 50%;
-  width: 50%;
-  -webkit-transform: translateX(70%);
-          transform: translateX(70%);
 }
