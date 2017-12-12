@@ -1,6 +1,6 @@
 /*SITE MAIN CONTENT*/
 .main-content{
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
   background: #fff;
   padding: 3em 6em;
@@ -40,4 +40,16 @@
 }
 .main-content__column__inner-right{
   float: right;
+}
+
+
+/*SITE MAIN CONTENT MOBILE*/
+@media (max-width: 1200px) {
+  .main-content{
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: .8em .8em;
+  }
+
 }

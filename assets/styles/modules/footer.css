@@ -4,7 +4,7 @@
   background: #363839;
 }
 .site-footer__column-wrapper{
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
   padding: 3em 6em;
 }
@@ -41,4 +41,14 @@ color: #1da1f2;
 }
 .fa-google-plus-square{
 color: #c03121;
+}
+
+
+/*SITE FOOTER MOBILE*/
+@media (max-width: 1200px) {
+  .site-footer__column-wrapper{
+    width: 100%;;
+    margin: 0 auto;
+    padding: .8em .8em;
+  }
 }
