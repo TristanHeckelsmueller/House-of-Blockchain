@@ -5,11 +5,18 @@
   background: #fff;
   padding: 3em 6em;
 }
-
 .main-content__column__inner{
-  margin-top: 2.7em;
   width: 50%;
   float: left;
+}
+.main-content__column__inner-top{
+  margin-top: 2.7em;
+}
+.main-content__column__inner-middle-right{
+  margin-top: 8em;
+}
+.main-content__column-img-middle{
+  margin-top: 8em;
 }
 .main-content__column__inner h3{
   color: #59b307;
