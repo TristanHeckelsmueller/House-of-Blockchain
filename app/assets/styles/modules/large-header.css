@@ -13,7 +13,7 @@
     height: 600px;
     color: #fff;
     background: url("./background-images/Jungle__Header-01.jpg");
-    background-size: auto;
+    background-size: unset;
     background-repeat: no-repeat;
     position: relative;
   }
