@@ -7,7 +7,6 @@
   position: relative;
   border-bottom: 3px solid #65B330;
 }
-
   .large-header{
     width: 100%;
     height: 600px;
@@ -17,10 +16,8 @@
     background-repeat: no-repeat;
     position: relative;
   }
-
   .large-header__text-content {
     position: absolute;
-
     top: 40%;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -34,13 +31,10 @@
     font-size: 3.2em;
     margin: 0;
   }
-
   .large-header__sub-title{
     width: 80%;
     text-align: right;
   }
-
-
 .slide-02{
     background: url("./background-images/Jungle__Header-02.jpg");
 }

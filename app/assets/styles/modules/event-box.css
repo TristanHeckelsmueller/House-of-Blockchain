@@ -3,6 +3,9 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.info-box{
+  margin: 1em;
+}
 .event-box a{
   color: #fff;
   text-decoration: none;
@@ -76,6 +79,27 @@
   text-align: center;
   margin-top: .3em;
 }
+/* Wellness Col Main */
+.box{
+  width: 100%;
+  height: 100%;
+  padding: 1em 3em;
+}
+.wellness-box{
+
+  background: #59b307;
+
+}
+.box h2{
+  color: #fff;
+  text-align: center;
+}
+/* Newsletter Col */
+.newsletter-box{
+    background: #007fc5;
+}
+
+
 @media (max-width: 1000px) {
   .event-box__inner{
     width: 100%;
