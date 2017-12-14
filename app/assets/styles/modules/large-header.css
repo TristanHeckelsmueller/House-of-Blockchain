@@ -15,8 +15,6 @@
     background-size: unset;
     background-repeat: no-repeat;
     position: relative;
-    animation-name: zoom-in;
-    animation-duration: 4s;
   }
   .large-header__text-content {
     position: absolute;
@@ -37,11 +35,9 @@
     width: 80%;
     text-align: right;
   }
+
 .slide-02{
     background: url("./background-images/Jungle__Header-02.jpg");
-    transition: all ease 30s;
-    animation-name: zoom-in;
-    animation-duration: 30s;
 }
 }
 .slide-03{
