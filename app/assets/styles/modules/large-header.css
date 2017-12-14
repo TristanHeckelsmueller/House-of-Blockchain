@@ -15,6 +15,8 @@
     background-size: unset;
     background-repeat: no-repeat;
     position: relative;
+    animation-name: zoom-in;
+    animation-duration: 4s;
   }
   .large-header__text-content {
     position: absolute;
@@ -37,13 +39,23 @@
   }
 .slide-02{
     background: url("./background-images/Jungle__Header-02.jpg");
+    transition: all ease 30s;
+    animation-name: zoom-in;
+    animation-duration: 30s;
+}
 }
 .slide-03{
-      background: url("./background-images/Jungle__Header-03.jpg");
+    background: url("./background-images/Jungle__Header-03.jpg");
 }
 .slide-04{
-      background: url("./background-images/Jungle__Header-04.jpg");
+    background: url("./background-images/Jungle__Header-04.jpg");
 }
+@keyframes zoom-in {
+  0% {background-size: 100%;}
+  100% {background-size: 110%;}
+}
+
+
 
 .large-header__slide{
   display: none;
@@ -80,5 +92,8 @@ font-style: italic; font-weight: 900;
     width: 50%;
     text-align: center;
     color: #fff;
+  }
+  .large-header__sub-title{
+    font-size: .6em;
   }
 }

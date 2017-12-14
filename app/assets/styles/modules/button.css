@@ -21,3 +21,9 @@
 .btn-link{
 
 }
+
+@media (max-width: 800px) {
+  .btn-main{
+    left: 30%;
+  }
+}

@@ -6,3 +6,9 @@ input[type=email]{
   left: 41%;
   font-style: italic;
 }
+
+@media (max-width: 800px) {
+  .newsletter__sub input{
+    left: 30%;
+  }
+}
