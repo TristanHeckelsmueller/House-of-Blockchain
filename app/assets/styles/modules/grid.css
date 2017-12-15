@@ -1,0 +1,17 @@
+.col-main{
+  width: 100%;
+}
+.col-half-right, .col-half-left{
+  width: 50%;
+  float: left;
+}
+.col-third-left, .col-third-middle, .col-third-right{
+  width: 33%;
+  float: left;
+}
+
+@media (max-width: 800px) {
+  .col-main, .col-half-right, .col-half-left, .col-third-left, .col-third-middle, .col-third-right{
+    width: 100%;
+  }
+}
