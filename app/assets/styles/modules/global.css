@@ -23,3 +23,7 @@ height: 0px;
 h1{
   color: #65B330;
 }
+hr{
+  border-color: #ffffff80;
+  border: 2px;
+}

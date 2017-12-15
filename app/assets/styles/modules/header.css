@@ -68,7 +68,7 @@
   float: right;
   color: #fff;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.5em;
   z-index: 6;
   display: none;
 }
@@ -76,7 +76,7 @@
   float: right;
   color: #fff;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.5em;
   z-index: 6;
   display: none;
 }
@@ -90,6 +90,7 @@
   padding: 1em;
   z-index: 2;
   display: none;
+  text-align: center;
 }
 .secondary-nav__display a{
   color: #fff;
@@ -147,5 +148,8 @@
       }
       .site-header__logo{
         width: 50%;
+      }
+      .secondary-nav__display a{
+        font-size: 1.6em;
       }
     }

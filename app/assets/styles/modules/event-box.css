@@ -6,6 +6,14 @@
 .info-box{
   margin: 1em;
 }
+.events-content__logo{
+  float: right;
+}
+.events-content__logo img{
+  width: 50%;
+  float: right;
+  padding: 0  0 2em 2em;
+}
 .event-box a{
   color: #fff;
   text-decoration: none;
@@ -107,6 +115,9 @@
     height: auto;
     padding: 1em;
   }
+  .events-content__logo{
+    display: none;
+  }
 }
 @media (max-width: 800px){
   .event-box{
@@ -124,5 +135,6 @@
     width: 20%;
     height: 20%;
   }
+
 
 }
