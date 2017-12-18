@@ -4,7 +4,7 @@ Main-Colors:
 #1 Green: rgb: rgba(101,179,48, x)
           hex: #65B330
 #2 Green: hex: #4eb50f
-#1 Blue:  hex: #007fc5
+#1 Blue:  hex: #1b94b9
 
 #1 Grey:  hex: #445362
 #2 Grey:  hex: #212830
@@ -19,6 +19,7 @@ background-grey: #f2f2f2
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2;
 }
 body{
   margin: 0;

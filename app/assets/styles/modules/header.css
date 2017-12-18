@@ -21,6 +21,8 @@
   background: #4eb50f;
   width: auto;
   opacity: 1;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
 }
 .site-header__logo__graphic__svg{
   width: 100%;
