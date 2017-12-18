@@ -18,9 +18,11 @@
   transform-origin: 50% 0;
   top: 0;
   position: absolute;
-  background: #59b307;
+  background: #4eb50f;
   width: auto;
   opacity: 1;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
 }
 .site-header__logo__graphic__svg{
   width: 100%;
