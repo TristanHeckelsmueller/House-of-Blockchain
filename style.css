@@ -1,0 +1,23 @@
+/*
+Theme Name: Cursade
+Theme URI: https://cursade.de
+Author: Tristan Heckelsmueller
+Author URI: https://cursade.de
+Description: Theme for the House of Blockchain.
+*/
+
+@import "assets/styles/modules/global.css";
+@import "assets/styles/modules/header.css";
+@import "assets/styles/modules/grid.css";
+@import "assets/styles/modules/large-header.css";
+@import "assets/styles/modules/content.css";
+@import "assets/styles/modules/news.css";
+@import "assets/styles/modules/footer.css";
+@import "assets/styles/modules/event-box.css";
+@import "assets/styles/modules/button.css";
+@import "assets/styles/modules/form.css";
+@import "assets/styles/modules/event-calendar.css";
+@import "assets/styles/modules/maps.css";
+@import "assets/styles/modules/login.css";
+@import "assets/styles/modules/shop.css";
+@import "assets/styles/modules/myacc.css";

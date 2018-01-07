@@ -1,0 +1,49 @@
+/*GLOBAL CSS*/
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  margin: 0;
+  background: #F2F2F2;
+}
+p{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+.clearfix{
+clear: both;
+display: block;
+visibility: hidden;
+height: 0px;
+}
+
+h1{
+  color: #65B330;
+}
+h3 {
+  margin: .5em 0em .3em;
+}
+h4{
+  margin: .5em 0em .3em;
+}
+hr{
+  border-color: #ffffff80;
+  border: 2px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  transition: all ease 200ms;
+}
+a:hover{
+  transition: all ease 200ms;
+  font-size: 1.1em;
+}
+.site-header__avatar{
+  padding: .2em;
+  margin-left: .2em;
+  margin-top: .2em;
+}

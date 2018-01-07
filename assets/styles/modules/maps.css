@@ -1,0 +1,55 @@
+.acf-map {
+	width: 50%;
+	height: 600px;
+	border: #ccc solid 1px;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+.maps__location-text{
+  padding: .8em;
+  border: 1px solid #d2d2d2;
+  margin: 0em .4em .4em;
+  width: 47%;
+  float: left;
+}
+.maps__location-text h3 {
+    font-size: 1.4rem;
+     margin: 0em 0em .3em;
+     color: #65B330;
+   }
+.maps__location-text h4{
+    font-size: 1.2rem;
+     margin: .5em 0em .3em;
+     color: #000;
+  }
+.maps__location-text p{
+  font-size: 1rem;
+  color: #000;
+}
+.maps__location-text a{
+}
+
+@media (max-width: 1000px) {
+  .maps__location-text{
+    margin: .2em 0em;
+    width: 100%;
+  }
+  .acf-map{
+    width: 100%;
+    height: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .maps__location-text h3{
+    font-size: 1rem;
+  }
+  .maps__location-text h4{
+    font-size: .8rem;
+  }
+  .maps__location-text p{
+      font-size: .5rem;
+  }
+}

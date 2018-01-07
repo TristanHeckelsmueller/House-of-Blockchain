@@ -1,0 +1,88 @@
+/*LARGE HEADER INDEX*/
+
+.large-header__container{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 3px solid #65B330;
+}
+  .large-header{
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background: url("/wp-content/uploads/2017/12/Jungle__Header-01.jpg");
+    background-size: unset;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .large-header__text-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX()(-50%);
+    width: 40%;
+    text-align: center;
+    color: #fff;
+  }
+  .large-header__text-content h2{
+    font-weight: 400;
+    font-size: 3.2em;
+    margin: 0;
+  }
+  .large-header__sub-title{
+    width: 80%;
+    text-align: right;
+  }
+
+.slide-02{
+    background: url("/wp-content/uploads/2017/12/Jungle__Header-02.jpg");
+}
+
+.slide-03{
+    background: url("/wp-content/uploads/2017/12/Jungle__Header-03.jpg");
+}
+.slide-04{
+    background: url("/wp-content/uploads/2017/12/Jungle__Header-04.jpg");
+}
+.large-header__slide{
+  display: none;
+}
+  .large-header-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  .timer {
+    height: 1%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #59b307;
+    z-index: 1;
+  }
+  .large-header__italic{
+font-style: italic; font-weight: 900;
+}
+
+    @media (max-width: 800px){
+  .large-header__text-content h2{
+    font-size: 1em;
+    width: 50%;;
+  }
+  .large-header__container{
+    height: 200px;
+  }
+  .large-header__text-content {
+    top: 10%;
+    left: 60%;
+
+    width: 50%;
+    text-align: center;
+    color: #fff;
+  }
+  .large-header__sub-title{
+    font-size: .6em;
+  }
+}

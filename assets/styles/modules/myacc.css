@@ -1,0 +1,25 @@
+.woocommerce-MyAccount-navigation-link--customer-logout{
+  display: none;
+}
+.woocommerce-MyAccount-navigation-link{
+  margin: .1em;
+  padding: .8em;
+  float: left;
+  list-style-type: none;
+  border: 1px solid #d2d2d2;
+  background: rgba(89,179,7, 1);
+  font-weight: 900;
+}
+.woocommerce-MyAccount-navigation-link a{
+  transition: all ease 100ms;
+  color: #fff;
+}
+.woocommerce-MyAccount-navigation-link a:hover{
+  color: #333;
+}
+ul{
+  padding: 0;
+  content: "";
+  display: table;
+  clear: both;
+}
