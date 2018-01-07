@@ -1,25 +1,9 @@
-
-/*
-Main-Colors:
-#1 Green: rgb: rgba(101,179,48, x)
-          hex: #65B330
-#2 Green: hex: #4eb50f
-#1 Blue:  hex: #1b94b9
-
-#1 Grey:  hex: #445362
-#2 Grey:  hex: #212830
-
-background-grey: #f2f2f2
-
- */
-
 /*GLOBAL CSS*/
 *{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.2;
 }
 body{
   margin: 0;
@@ -39,7 +23,27 @@ height: 0px;
 h1{
   color: #65B330;
 }
+h3 {
+  margin: .5em 0em .3em;
+}
+h4{
+  margin: .5em 0em .3em;
+}
 hr{
   border-color: #ffffff80;
   border: 2px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  transition: all ease 200ms;
+}
+a:hover{
+  transition: all ease 200ms;
+  font-size: 1.1em;
+}
+.site-header__avatar{
+  padding: .2em;
+  margin-left: .2em;
+  margin-top: .2em;
 }

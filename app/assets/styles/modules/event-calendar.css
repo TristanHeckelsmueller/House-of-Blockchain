@@ -15,7 +15,7 @@
   padding: .2em;
 }
 .calendar-header{
-  background: #4eb50f;
+  background: #59b307;
   padding: 1em;
   color: #fff;
   font-weight: 900;
@@ -39,4 +39,33 @@
 }
 .past-days{
   background: rgba(89,179,7, .25);
+}
+
+
+
+@media (max-width: 1200px) {
+  .event-col__content{
+      width: 100%;
+  }
+  .event-col__calender{
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .event-calendar{
+    float: left;
+    float: none;
+    margin: 1em auto;
+  }
+}
+@media (max-width: 400px) {
+  .calendar-content td{
+    padding: .2rem .2rem;
+  }
+  .calendar-content th{
+    padding: .2rem;
+  }
+  .event-calendar{
+    max-width: 218px;
+  }
 }

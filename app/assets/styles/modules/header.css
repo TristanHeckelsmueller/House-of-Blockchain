@@ -18,11 +18,9 @@
   transform-origin: 50% 0;
   top: 0;
   position: absolute;
-  background: #4eb50f;
+  background: #59b307;
   width: auto;
   opacity: 1;
-  -webkit-transition: width 2s; /* Safari */
-  transition: width 2s;
 }
 .site-header__logo__graphic__svg{
   width: 100%;
@@ -89,7 +87,7 @@
   background-color: rgba(89,179,7, .95);
   width: 100%;
   height: 100%;
-  padding: 1em;
+  padding: 2em 1em;
   z-index: 2;
   display: none;
   text-align: center;

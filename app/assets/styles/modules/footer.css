@@ -22,7 +22,7 @@
   padding-bottom: .8em;
 }
 .site-footer__column h3{
-  color: #4eb50f;
+  color: #59b307;
   margin-bottom: .2em;
 }
 .footer__column-right ul{
@@ -63,6 +63,13 @@ color: #c03121;
     position: relative;
   }
 }
+@media (max-width: 500px) {
+  .footer__column-right ul{
+  -webkit-transform: translateX(25%);
+          transform: translateX()(25%);
+  }
+}
+
 @media (max-width: 300px){
 .footer__column-right ul{
   -webkit-transform: translateX(13%);

@@ -3,7 +3,8 @@
   width: 1200px;
   margin: 0 auto;
   background: #fff;
-  padding: 1em 3em 3em;
+  padding: 5em 3em 3em;
+  min-height: 677px;
 }
 .main-content__column__inner{
   width: 50%;
@@ -42,7 +43,6 @@
   float: right;
 }
 
-
 /*SITE MAIN CONTENT MOBILE*/
 @media (max-width: 1200px) {
   .main-content{
@@ -61,6 +61,7 @@
   .main-content{
     background: #fff;
     padding: 1em .8em;
+    min-height: 455px;
   }
   .main-content__column__inner h3{
     font-size: 1em;
