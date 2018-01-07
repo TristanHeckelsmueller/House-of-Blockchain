@@ -1,0 +1,134 @@
+.event-box{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.info-box{
+  margin: 1em;
+}
+.events-content__logo{
+  float: right;
+}
+.events-content__logo img{
+  width: 50%;
+  float: right;
+  padding: 0  0 2em 2em;
+}
+.event-box a{
+  color: #fff;
+  text-decoration: none;
+}
+.event-box__title{
+  margin-top: 0;
+  margin-bottom: .8em;
+  color: #363839;
+}
+.event-box__inner{
+  width: 50%;
+  float: left;
+  position: relative;
+  padding: 3em;
+}
+.event-box__left{
+  background: #65B330;
+}
+.event-box__right{
+  background: #1b94b9;
+}
+.event-box__inner-right{
+  position: static;
+}
+.event-box__inner-left{
+  position: static;
+}
+.event-box__icon{
+  position: static;
+  top: 50%;
+  border: 5px solid;
+  border-radius: 10em;
+  width: 3.75em;
+  height: 3.75em;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+.event-box__icon__news{
+  background: #4eb50f;
+  border-color: #4eb50f;
+}
+.event-box__icon__events{
+    background: #007fc5;
+    border-color: #007fc5;
+}
+.event-box__event-det{
+  width: 80%;
+  position: static;
+  top: 50%;
+  float: left;
+  padding-left: 1em;
+  color: #363839;
+}
+.event-box__event-det p{
+  font-size: .8em;
+}
+.event-box__event-det h3{
+  margin: .2em 0;
+  font-size: 1.5em;
+}
+
+.event-box__month{
+  font-size: 1em;
+  text-align: center;
+  margin-top: .2em;
+  font-weight: bold;
+}
+.event-box__day{
+  font-size: .9em;
+  text-align: center;
+  margin-top: .3em;
+}
+/* Wellness Col Main */
+.box{
+  width: 100%;
+  height: 100%;
+  padding: 1em 3em;
+}
+.wellness-box{
+  background: #212830;
+}
+.box h2{
+  color: #fff;
+  text-align: center;
+}
+/* Newsletter Col */
+.newsletter-box{
+    background: #445362;
+}
+@media (max-width: 1000px) {
+  .event-box__inner{
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 1em;
+  }
+  .events-content__logo{
+    display: none;
+  }
+}
+@media (max-width: 800px){
+  .event-box{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .event-box__event-det h3{
+    margin: .2em 0;
+    font-size: 1em;
+  }
+  .box__text h2{
+    font-size: 1.2em;
+  }
+  .event-box__icon{
+    width: 20%;
+    height: 20%;
+  }
+}

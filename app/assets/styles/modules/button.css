@@ -1,0 +1,29 @@
+.btn-main{
+  position: relative;
+  left: 40%;
+  margin: .5em;
+  width: 180px;
+  background: #751e9a; /* Old browsers */
+  background: -moz-linear-gradient(left, #F2994A 0%, #F2994A 25%, #787878 40%, #4F4F4F 60%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #F2994A 0%, #F2994A 25%, #787878 40%, #4F4F4F 60%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #F2994A 0%, #F2994A 25%, #787878 40%, #4F4F4F 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#751e9a', endColorstr='#be7ee8',GradientType=1 ); /* IE6-9 */
+}
+.btn-icon{
+  float: left;
+  padding: 1em;
+}
+.btn-text{
+  padding: 1em;
+  font-weight: 900;
+  color: #fff;
+}
+.btn-link{
+
+}
+
+@media (max-width: 800px) {
+  .btn-main{
+    left: 30%;
+  }
+}
