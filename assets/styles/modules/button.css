@@ -1,5 +1,5 @@
 .btn-main{
-  width: 180px;
+  width: 200px;
   cursor: pointer;
   margin-top: .2em;
   padding: .2em;
@@ -37,6 +37,7 @@ button{
   border: 0;
   box-shadow:5px 2px 4px 0px rgb(151, 152, 149);
   text-shadow: 0 -1px 1px rgb(151, 152, 149);
+  border-radius: .4em;
 }
 button:hover{
   top: 5px;

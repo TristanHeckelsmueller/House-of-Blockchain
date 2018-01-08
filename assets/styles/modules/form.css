@@ -2,7 +2,8 @@ input[type=email]{
   padding: .5em;
 }
 .newsletter__form{
-  margin-left:  38%;
+  width: fit-content;
+  margin: 0 auto;
 }
 .newsletter__sub input{
   position: relative;
@@ -37,4 +38,14 @@ input[type="text"], input[type="password"]{
   top: -10px;
   left: -20px;
   box-shadow:11px 6px 4px 0px rgb(151, 152, 149) !important;
+}
+.coupon input {
+  width: 100% !important;
+  padding: .5em;
+}
+.wc-forward{
+  float: right;
+}
+.wcppec-checkout-buttons__separator{
+  display: none;
 }

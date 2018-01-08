@@ -61,16 +61,31 @@ if ( post_password_required() ) {
 
   <div class="related-products">
     <h2>Andere Kurse die dich interessieren könnten:</h2>
+
+
       <?php
       $productRel = new WP_Query(array(
         'posts_per_page' => 3,
         'post_type' => 'product'
       ));
+
+
       while ($productRel->have_posts()) {
           $productRel->the_post(); ?>
           <div class="related-products__column">
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+
+						<div class=" product__related__img">
+							<?php if ( has_post_thumbnail()) : ?>
+								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+									<?php the_post_thumbnail(); ?>
+								</a>
+								<div class="clearfix"></div>
+							<?php endif; ?>
+						</div>
+						<div class="product__related__content">
+            	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            	<p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+						</div>
           </div>
       <?php } ?>
   </div>

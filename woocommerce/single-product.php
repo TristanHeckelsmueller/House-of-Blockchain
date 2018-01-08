@@ -66,9 +66,10 @@ get_header( 'shop' ); ?>
 						    <?php endif; ?>
 							</div>
 							<div class="product__tutor__content">
-								<strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
+								<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 								<p><?php echo wp_trim_words(get_the_content(), 20); ?></p>
 						</div>
+						<div class="clearfix"></div>
 					</div>
 			<div class="clearfix"></div>
 						<?php

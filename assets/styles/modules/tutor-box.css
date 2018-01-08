@@ -1,9 +1,9 @@
 .frontpage__tutor-box{
-  padding: 2em;
-  margin: 3em 0;
+  padding: 4em 1em;
   position: relative;
   width: 100%;
   height: auto;
+  background: #fff;
 }
 .frontpage__tutor-box__tutor{
   width: 33%;
@@ -23,8 +23,9 @@
   margin: 1em 0;
 }
 .frontpage__tutor-box__title{
-  font-size: 2.5em;
+  font-size: 3em;
   text-align: center;
+  margin: 0 0 1em;
 }
 .frontpage__tutor-box p{
   font-size: 1.2em;

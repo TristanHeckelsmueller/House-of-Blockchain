@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="main-content">
   <h1>Articles and Videos</h1>
-  <div class="col-half-left">
+  <div class="col-half-left news__archive__list">
     <h2>News:</h2>
     <?php
       while (have_posts()) {

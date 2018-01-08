@@ -24,5 +24,20 @@
    </div>
    <div class="clearfix"></div>
 <?php } ?>
+
+<div class="product__program">
+  <div class="">
+    <h2>Verwandte Programme:</h2>
+
+  <?php
+  $relatedProgram = get_field('related_program(s)');
+    foreach ($relatedProgram as $programrel) {
+      ?> <h3> <a href=" <?php echo get_the_permalink($programrel); ?> "> <?php echo get_the_title($programrel); ?></a> </h3>
+        <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+      <?php
+    }
+  ?>
+  </div>
+</div>
 </div>
 <?php get_footer(); ?>

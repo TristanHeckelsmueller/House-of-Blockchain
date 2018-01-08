@@ -157,7 +157,7 @@
 
 
   <div class="frontpage__tutor-box">
-    <div class="">
+    <div class="frontpage__tutor-box__title-box">
       <h2 class="frontpage__tutor-box__title">Das sagen unsere Dozenten:</h2>
     </div>
       <?php
@@ -184,7 +184,9 @@
           <?php
         } wp_reset_postdata();
        ?>
+       <div class="clearfix"></div>
   </div>
+
   <div class="clearfix"></div>
 
   <div class="event-box">

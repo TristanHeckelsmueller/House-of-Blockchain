@@ -208,8 +208,23 @@
   float: left;
 }
 .product__tutor__img{
-  float: left;
-  padding: .2em;
+  margin: 0 auto;
+  width: fit-content;
+}
+.product__related__img{
+  padding: 0 3em;
+  width: fit-content;
+}
+.product__related__img img{
+  width: 100%;
+  height: auto;
+  border-radius: 4em;
+}
+.product__related__content{
+
+}
+.product__tutor__content h4{
+  text-align: center;
 }
 .woocommerce-product-gallery{
   position: relative;
