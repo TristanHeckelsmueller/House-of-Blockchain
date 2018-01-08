@@ -55,19 +55,22 @@ get_header( 'shop' ); ?>
 						'post_type' => 'tutor'
 					));
 					while ($homepageTutor->have_posts()) { ?>
-			<div class="product__tutor__img">
-							<?php
-						$homepageTutor->the_post(); ?>
-					<?php
-			    $image = get_field('profile_img');
-			    if( !empty($image) ): ?>
-			    	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			    <?php endif; ?>
-				</div>
-				<div class="product__tutor__content">
-					<strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
-					<p><?php echo wp_trim_words(get_the_content(), 20); ?></p>
-			</div>
+					<div class="product__tutor__col">
+						<div class="product__tutor__img">
+										<?php
+									$homepageTutor->the_post(); ?>
+								<?php
+						    $image = get_field('profile_img');
+						    if( !empty($image) ): ?>
+						    	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						    <?php endif; ?>
+							</div>
+							<div class="product__tutor__content">
+								<strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
+								<p><?php echo wp_trim_words(get_the_content(), 20); ?></p>
+						</div>
+					</div>
+			<div class="clearfix"></div>
 						<?php
 					} wp_reset_postdata();
 				 ?>

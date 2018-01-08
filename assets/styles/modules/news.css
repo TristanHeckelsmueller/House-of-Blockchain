@@ -38,3 +38,8 @@
 .news__single__content{
   padding-right: 1.7em;
 }
+.news__single__img img{
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}

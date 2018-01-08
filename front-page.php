@@ -81,7 +81,6 @@
 <div class="event-box">
   <div class="event-box__inner event-box__left ">
     <h2 class="event-box__title">Upcoming Courses:</h2>
-      <div class="info-box">
     <?php
       $homepageEvents = new WP_Query(array(
         'posts_per_page' => 2,
@@ -89,6 +88,7 @@
       ));
       while ($homepageEvents->have_posts()) {
         $homepageEvents->the_post(); ?>
+        <div class="info-box">
           <div class="event-box__inner-left">
             <a href="<?php the_permalink(); ?>">
               <div class="event-box__icon event-box__icon__events">
@@ -108,16 +108,16 @@
             <p><?php echo wp_trim_words(get_the_content(), 15); ?></p>
           </div>
         </div>
+      </div>
+      <div class="clearfix"></div>
 
         <?php
       }
      ?>
-    </div>
     <div class="clearfix"></div>
   </div>
   <div class="event-box__inner event-box__right ">
     <h2 class="event-box__title">Recent News:</h2>
-    <div class="info-box">
       <?php
         $homepagePosts = new WP_Query(array(
           'posts_per_page' => 2,
@@ -125,6 +125,7 @@
         ));
         while ($homepagePosts->have_posts()) {
           $homepagePosts->the_post(); ?>
+          <div class="info-box">
             <div class="event-box__inner-left">
               <a href="<?php the_permalink(); ?>">
                 <div class="event-box__icon event-box__icon__news">
@@ -141,17 +142,50 @@
               <p><?php echo wp_trim_words(get_the_content(), 15); ?></p>
             </div>
           </div>
+        </div>
+        <div class="clearfix"></div>
 
           <?php
         } wp_reset_postdata();
        ?>
-    </div>
     <div class="clearfix">
     </div>
   </div>
 </div>
   <div class="clearfix">
   </div>
+
+
+  <div class="frontpage__tutor-box">
+    <div class="">
+      <h2 class="frontpage__tutor-box__title">Das sagen unsere Dozenten:</h2>
+    </div>
+      <?php
+        $homepageTutor = new WP_Query(array(
+          'posts_per_page' => 3,
+          'post_type' => 'tutor'
+        ));
+        while ($homepageTutor->have_posts()) { ?>
+    <div class="frontpage__tutor-box__tutor">
+      <div class="frontpage__tutor-box__img">
+            <?php
+          $homepageTutor->the_post(); ?>
+        <?php
+        $image = get_field('profile_img');
+        if( !empty($image) ): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>
+      </div>
+      <div class="frontpage__tutor-box__content">
+        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <p><?php the_content(); ?></p>
+    </div>
+  </div>
+          <?php
+        } wp_reset_postdata();
+       ?>
+  </div>
+  <div class="clearfix"></div>
 
   <div class="event-box">
     <div class="wellness-box box">

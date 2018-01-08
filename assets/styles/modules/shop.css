@@ -204,7 +204,8 @@
 }
 /* Related Tutor */
 .product__tutor__content{
-  padding: .2em;
+  padding-left: .3em;
+  float: left;
 }
 .product__tutor__img{
   float: left;
@@ -218,4 +219,10 @@
   float: left;
   width: 50%;
   position: relative;
+}
+.product__tutor__col{
+  margin-top: .5em;
+}
+.product__archive__img img{
+  width: 80%;
 }

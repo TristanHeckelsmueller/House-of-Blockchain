@@ -43,6 +43,12 @@
   float: right;
 }
 
+.fp-box{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /*SITE MAIN CONTENT MOBILE*/
 @media (max-width: 1200px) {
   .main-content{
