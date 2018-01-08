@@ -12,10 +12,10 @@ input[type=email]{
 
 @media (max-width: 800px) {
   .newsletter__sub input{
-    left: 30%;
+    
   }
 .newsletter__form{
-    margin-left:10%;
+
   }
 }
 input[type="text"], input[type="password"]{

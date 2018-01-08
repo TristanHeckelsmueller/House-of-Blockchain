@@ -15,8 +15,8 @@
     <ul>
       <li><a href="/articles/news" id="features-link">NEWS</a></li>
       <li><a href="/courses" id="testimonials-link">COURSES</a></li>
+      <li><a href="/tutors" id="testimonials-link">TUTORS</a></li>
       <li><a href="/locations" id="testimonials-link">LOCATIONS</a></li>
-      <li><a href="/login" id="testimonials-link">LOGIN</a></li>
       <?php
       if(is_user_logged_in()) { ?>
         <li><a href="/my-account" id="testimonials-link" class="btn btn__log"><span class="btn__text">MY ACCOUNT</span><span class="site-header__avatar"><?php echo get_avatar(wp_get_current_user_id, 16); ?></span></a></li>
@@ -28,15 +28,17 @@
       }
       ?>
       <?php
-        if(is_user_logged_in()) { ?>
-          <li><a href=" <?php echo wp_logout_url(); ?>" id="testimonials-link" class="btn btn__log"><span class="btn__text">LOGOUT</span><span class="site-header__avatar"><?php echo get_avatar(wp_get_current_user_id, 16); ?></span></a></li>
-          <?php
-        }else{
-          ?>
-          <li><a href=" <?php echo esc_url(site_url('/wp-login.php')); ?>" id="testimonials-link">LOGIN</a></li>
-          <?php
-        }
-       ?>
+      if(is_user_logged_in()) { ?>
+        <li><a href=" <?php echo wp_logout_url(); ?>" id="testimonials-link" class="btn btn__log"><span class="btn__text">LOGOUT</span><span class="site-header__avatar"><?php echo get_avatar(wp_get_current_user_id, 16); ?></span></a></li>
+        <?php
+      }else{
+        ?>
+        <li><a href=" <?php echo esc_url(site_url('/wp-login.php')); ?>" id="testimonials-link">LOGIN</a></li>
+        <?php
+      }
+      ?>
+      <li><a href="/login" id="testimonials-link">LOGIN</a></li>
+
     </ul>
   </div>
     <header class="site-header">
@@ -58,6 +60,7 @@
             <ul>
               <li><a href="/articles/news" id="features-link">NEWS</a></li>
               <li><a href="/courses" id="testimonials-link">COURSES</a></li>
+              <li><a href="/tutors" id="testimonials-link">TUTORS</a></li>
               <li><a href="/locations" id="testimonials-link">LOCATIONS</a></li>
               <?php
               if(is_user_logged_in()) { ?>

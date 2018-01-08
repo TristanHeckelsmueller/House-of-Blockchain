@@ -30,3 +30,17 @@
 .frontpage__tutor-box p{
   font-size: 1.2em;
 }
+
+@media (max-width: 800px){
+  .frontpage__tutor-box__tutor{
+    float: none;
+    width: 100%;
+    padding: .6em;
+  }
+  .frontpage__tutor-box__title{
+    font-size: 1.5em;
+  }
+  .frontpage__tutor-box{
+    padding: .5em 0 0;
+  }
+}

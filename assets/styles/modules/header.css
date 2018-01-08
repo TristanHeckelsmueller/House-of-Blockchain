@@ -100,6 +100,7 @@
 .secondary-nav__display ul{
   list-style: none;
   padding: 0;
+  margin: 0 auto;
 }
 .secondary-nav__display li{
   padding: 2em;
