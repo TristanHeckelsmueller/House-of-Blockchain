@@ -1,4 +1,6 @@
-
+.event-box{
+  display: flex;
+}
 .info-box{
   margin: 1em;
 }
