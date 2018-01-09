@@ -106,7 +106,9 @@
   padding: 2em;
   margin: 1em;
 }
-
+.current-menu-item{
+  color: red !important;
+}
 
 
 

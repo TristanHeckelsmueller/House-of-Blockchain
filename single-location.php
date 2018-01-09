@@ -5,6 +5,25 @@
     the_post(); ?>
     <h1><a href=" <?php the_permalink(); ?>"><?php the_title();?></a></h1>
     <?php the_content(); ?>
+
+
+
+<?php } ?>
+
+<?php
+  while (have_posts()) {
+    the_post();
+    $mapLocation = get_field('map_location');
+    ?>
+    <div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng']  ?>">
+      <h3><?php the_title(); ?></h3>
+      <p><?php echo $mapLocation[address]; ?></p>
+      <h4>Ansprechpartner: </h4>
+      <p> <a href="#"><?php the_field('contact_person') ?></a> </p>
+    </div>
+
+    <div class="clearfix">
+    </div>
 <?php } ?>
 <div class="">
   <h2>Kurse die hier unterrichtet werden:</h2>
@@ -23,7 +42,7 @@
   ?>
 </div>
 <div class="">
-  <h2>Tutoren die das unterrichten:</h2>
+  <h2>Tutoren die hier unterrichten:</h2>
   <?php
   $relatedTutor = get_field('related_tutor');
     foreach($relatedTutor as $tutorrel) {
@@ -35,7 +54,7 @@
 
 
 
-  
+
 
 
 

@@ -32,66 +32,59 @@ get_header( 'shop' ); ?>
       <div class="product__location product__relations-col">
 				<h3>Findet statt in:</h3>
 				<?php
-					$homepageLocation = new WP_Query(array(
-						'posts_per_page' => 2,
-						'post_type' => 'location'
-					));
-					while ($homepageLocation->have_posts()) { ?>
-			<div class="">
-							<?php
-						$homepageLocation->the_post(); ?>
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<p>Ansprechpartner: <?php the_field('contact_person'); ?></p>
-			</div>
+				$relatedLocation = get_field('related_location');
+					foreach ($relatedLocation as $locationel) {
+						?> <h3> <a href=" <?php echo get_the_permalink($locationel); ?> "> <?php echo get_the_title($locationel); ?></a> </h3>
+							<p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
 						<?php
-					} wp_reset_postdata();
-				 ?>
+					}
+				?>
       </div>
 			<div class="product__tutor product__relations-col">
 				<h3>Dozent:</h3>
-				<?php
-					$homepageTutor = new WP_Query(array(
-						'posts_per_page' => 2,
-						'post_type' => 'tutor'
-					));
-					while ($homepageTutor->have_posts()) { ?>
 					<div class="product__tutor__col">
 						<div class="product__tutor__img">
-										<?php
-									$homepageTutor->the_post(); ?>
-								<?php
-						    $image = get_field('profile_img');
-						    if( !empty($image) ): ?>
-						    	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-						    <?php endif; ?>
+							<?php
+
+							$RelTutor = get_field('related_tutor');
+							$tutorimg = get_field('profile_img');
+							foreach ($RelTutor as $relationTutorproduct) {
+								foreach ($tutorimg as $tutorimgrel) {
+									# code...
+								 if (has_post_thumbnail($tutorimgrel)) : ?>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+										<?php the_post_thumbnail(); ?>
+
+									</a>
+									<div class="clearfix"></div>
+								<?php endif;
+								}
+								?>
+<!-- FUNKTIONIERT NOCH NICHT -->
 							</div>
 							<div class="product__tutor__content">
-								<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-								<p><?php echo wp_trim_words(get_the_content(), 20); ?></p>
+										<h3> <a href=" <?php echo get_the_permalink($relationTutorproduct); ?> "> <?php echo get_the_title($relationTutorproduct); ?></a> </h3>
+										  <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+							      <?php
+							    }
+
+							  ?>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 			<div class="clearfix"></div>
-						<?php
-					} wp_reset_postdata();
-				 ?>
+
 			</div>
 			<div class="product__program product__relations-col">
 				<h3>Kategorien:</h3>
 				<?php
-					$homepagePrograms = new WP_Query(array(
-						'posts_per_page' => 2,
-						'post_type' => 'program'
-					));
-					while ($homepagePrograms->have_posts()) { ?>
-			<div class="">
-							<?php
-						$homepagePrograms->the_post(); ?>
-					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-			</div>
-						<?php
-					} wp_reset_postdata();
-				 ?>
+			  $relatedProgram = get_field('related_program(s)');
+			    foreach ($relatedProgram as $programrel) {
+			      ?> <h3> <a href=" <?php echo get_the_permalink($programrel); ?> "> <?php echo get_the_title($programrel); ?></a> </h3>
+			        <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+			      <?php
+			    }
+			  ?>
 			</div>
 			<div class="clearfix"></div>
 	</div>

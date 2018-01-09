@@ -36,7 +36,6 @@
 
 
 <div class="">
-  <h2>Kurse von diesem Dozenten:</h2>
   <?php
   $relatedProduct = get_field('related_products');
     foreach($relatedProduct as $productrel) {
@@ -50,6 +49,37 @@
       <?php
     }  wp_reset_postdata();
   ?>
+
+  <div class="product__relations">
+        <div class="product__location product__relations-col">
+  				<h3>Findet statt in:</h3>
+          <?php
+  			  $relatedLocation = get_field('related_location');
+  			    foreach ($relatedLocation as $locationel) {
+  			      ?> <h3> <a href=" <?php echo get_the_permalink($locationel); ?> "> <?php echo get_the_title($locationel); ?></a> </h3>
+  			        <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+  			      <?php
+  			    }
+  			  ?>
+        </div>
+        <div class="prodcut__relations-col">
+
+        </div>
+
+
+  			<div class="product__program product__relations-col">
+  				<h3>Kategorien:</h3>
+  				<?php
+  			  $relatedProgram = get_field('related_program(s)');
+  			    foreach ($relatedProgram as $programrel) {
+  			      ?> <h3> <a href=" <?php echo get_the_permalink($programrel); ?> "> <?php echo get_the_title($programrel); ?></a> </h3>
+  			        <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+  			      <?php
+  			    }
+  			  ?>
+  			</div>
+  			<div class="clearfix"></div>
+  	</div>
 </div>
 </div>
 <div class="clearfix"></div>
