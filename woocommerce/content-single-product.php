@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 
       <?php
       $productRel = new WP_Query(array(
-        'posts_per_page' => 3,
+        'posts_per_page' => 2,
         'post_type' => 'product'
       ));
 

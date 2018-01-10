@@ -145,12 +145,40 @@ function revcon_change_post_object() {
     $labels->menu_name = 'News';
     $labels->name_admin_bar = 'News';
 }
-
 add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
 
-add_action('admin_head', 'customizeDashboard');
+//Change Produt Post Type to Course Post Type
+function revcon_change_product_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Course';
+    $submenu['edit.php'][5][0] = 'Course';
+    $submenu['edit.php'][10][0] = 'Add Course';
+    $submenu['edit.php'][16][0] = 'Course Tags';
+}
+function revcon_change_product_object() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['product']->labels;
+    $labels->name = 'Courses';
+    $labels->singular_name = 'Course';
+    $labels->add_new = 'Add Course';
+    $labels->add_new_item = 'Add Course';
+    $labels->edit_item = 'Edit Course';
+    $labels->new_item = 'Course';
+    $labels->view_item = 'View Course';
+    $labels->search_items = 'Search Course';
+    $labels->not_found = 'No Course found';
+    $labels->not_found_in_trash = 'No Course found in Trash';
+    $labels->all_items = 'All Courses';
+    $labels->menu_name = 'Courses';
+    $labels->name_admin_bar = 'Courses';
+}
+add_action( 'admin_menu', 'revcon_change_product_label' );
+add_action( 'init', 'revcon_change_product_object' );
 
+//Dashboard Customization
+add_action('admin_head', 'customizeDashboard');
 function customizeDashboard() {
   echo '<style>
     #menu-posts-course{

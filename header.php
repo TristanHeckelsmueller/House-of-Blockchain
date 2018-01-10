@@ -14,7 +14,7 @@
   <div class="secondary-nav__display">
     <ul>
       <li><a href="/articles/news" id="features-link">NEWS</a></li>
-      <li><a href="/courses" id="testimonials-link">COURSES</a></li>
+      <li><a href="/product" id="testimonials-link">COURSES</a></li>
       <li><a href="/tutors" id="testimonials-link">TUTORS</a></li>
       <li><a href="/locations" id="testimonials-link">LOCATIONS</a></li>
       <?php
@@ -59,12 +59,12 @@
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
               <li><a <?php if (get_post_type() == 'post') echo 'class="current-menu-item"';?> href="/articles/news" id="news-link">NEWS</a></li>
-              <li><a <?php if (get_post_type() == 'course') echo 'class="current-menu-item"';?> href="<?php echo get_post_type_archive_link('course') ?>" id="course-link">COURSES</a></li>
+              <li><a <?php if (get_post_type() == 'product') echo 'class="current-menu-item"';?> href="<?php echo get_post_type_archive_link('product') ?>" id="course-link">COURSES</a></li>
               <li><a <?php if (get_post_type() == 'tutor') echo 'class="current-menu-item"';?> href="<?php echo get_post_type_archive_link('tutor') ?>" id="tutors-link">TUTORS</a></li>
               <li><a <?php if (get_post_type() == 'location') echo 'class="current-menu-item"';?> href="/locations" id="locations-link">LOCATIONS</a></li>
               <?php
               if(is_user_logged_in()) { ?>
-                <li><a href="/my-account" id="testimonials-link" class="btn btn__log"><span class="btn__text">MY ACCOUNT</span><span class="site-header__avatar"><?php echo get_avatar(wp_get_current_user_id, 16); ?></span></a></li>
+                <li><a href="/my-account" id="testimonials-link" <?php if (get_post_type() == 'account') echo 'class="current-menu-item"';?>class="btn btn__log"><span class="btn__text">MY ACCOUNT</span><span class="site-header__avatar"><?php echo get_avatar(wp_get_current_user_id, 16); ?></span></a></li>
                 <?php
               }else{
                 ?>
