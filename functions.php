@@ -9,7 +9,7 @@ function myhob_files() {
   wp_enqueue_script('myhob_ham', get_theme_file_uri( '/assets/scripts/modules/hamburger.js'), NULL, '1.0', true);
   wp_enqueue_script('myhob_slider', get_theme_file_uri( '/assets/scripts/modules/slider.js'), NULL, '1.0', true);
   wp_enqueue_script('myhob_calendar', get_theme_file_uri( '/assets/scripts/modules/calendar.js'), NULL, '1.0', true);
-  wp_enqueue_script('myhob_nav', get_theme_file_uri( '/assets/scripts/modules/nav_bar.js'), NULL, '1.0', true);
+  wp_enqueue_script('myhob_scroll', get_theme_file_uri( '/assets/scripts/modules/scroll.js'), NULL, '1.0', true);
   wp_enqueue_script('parallax', get_theme_file_uri( '/assets/scripts/modules/parallax.js'), NULL, '1.0', true);
   wp_enqueue_script('stars', get_theme_file_uri( '/assets/scripts/modules/stars.js'), NULL, '1.0', true);
   wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.min.css', Null, microtime());

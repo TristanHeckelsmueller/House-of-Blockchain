@@ -1,4 +1,3 @@
-<?php get_header(); ?>
 <div class="main-content">
   <div class="col-2third-left event-col__content">
     <h1>Upcoming Courses:</h1>
@@ -6,11 +5,11 @@
 
   <?php
     $homepageProducts = new WP_Query(array(
-      'posts_per_page' => 20,
+      'posts_per_page' => 5,
       'post_type' => 'product'
     ));
       while ($homepageProducts->have_posts()) {
-        if (in_category('starter')) {
+
         $homepageProducts->the_post(); ?>
         <div class="">
         <div class="col-third-left news__single__img product__archive__img">
@@ -24,15 +23,12 @@
         <div class="col-2third-right product__tutor__content">
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <p><?php echo wp_trim_words(get_the_content(), 60); ?></p>
-
         </div>
         </div>
         <div class="clearfix">
-
         </div>
-
       <?php
-    }
+
     } wp_reset_postdata();
    ?>
 </div>
@@ -61,5 +57,3 @@
 </div>
 
 <div class="clearfix"></div>
-
-<?php get_footer(); ?>

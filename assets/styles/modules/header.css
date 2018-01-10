@@ -21,8 +21,10 @@
   background: #59b307;
   width: auto;
   opacity: 1;
+  transition: all ease 500ms;
 }
 .site-header__logo__graphic__svg{
+  transition: all ease 500ms;
   width: 100%;
 }
 .site-header__menu-icon{
@@ -109,8 +111,23 @@
 .current-menu-item{
   color: #fff59d !important;
 }
-
-
+.logo-trans{
+  transition: all ease 600ms;
+  padding: .4em;
+  width: 20%;
+}
+.logo-trans-img{
+  transition: all ease 600ms;
+}
+.logo-trans-back{
+  transition: all ease 600ms;
+  padding: .8em;
+  width: 344px !important;
+}
+.logo-trans-img-back{
+  transition: all ease 600ms;
+  width: 100%;
+}
 
   /*HEADER MOBILE*/
   @media (max-width: 1200px) {

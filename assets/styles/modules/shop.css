@@ -244,6 +244,27 @@
 .product__archive__img img{
   width: 80%;
 }
+
+
+/* Category Single Shop */
+.type-product{
+  list-style-type: none;
+}
+.woocommerce-loop-product__link img{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.woocommerce-loop-product__link{
+  padding: 1em;
+}
+.woocommerce-loop-product__title{
+  font-size: 1em;
+}
+
+
+
+
 @media (max-width: 1200px) {
   .woocommerce-product-gallery{
     width: 33%;
