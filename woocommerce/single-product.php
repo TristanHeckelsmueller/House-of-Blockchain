@@ -35,7 +35,6 @@ get_header( 'shop' ); ?>
 				$relatedLocation = get_field('related_location');
 					foreach ($relatedLocation as $locationel) {
 						?> <h3> <a href=" <?php echo get_the_permalink($locationel); ?> "> <?php echo get_the_title($locationel); ?></a> </h3>
-							<p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
 						<?php
 					}
 				?>
@@ -48,23 +47,10 @@ get_header( 'shop' ); ?>
 
 							$RelTutor = get_field('related_tutor');
 							$tutorimg = get_field('profile_img');
-							foreach ($RelTutor as $relationTutorproduct) {
-								foreach ($tutorimg as $tutorimgrel) {
-									# code...
-								 if (has_post_thumbnail($tutorimgrel)) : ?>
-									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-										<?php the_post_thumbnail(); ?>
-
-									</a>
-									<div class="clearfix"></div>
-								<?php endif;
-								}
-								?>
-<!-- FUNKTIONIERT NOCH NICHT -->
+							foreach ($RelTutor as $relationTutorproduct) {?>
 							</div>
 							<div class="product__tutor__content">
 										<h3> <a href=" <?php echo get_the_permalink($relationTutorproduct); ?> "> <?php echo get_the_title($relationTutorproduct); ?></a> </h3>
-										  <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
 							      <?php
 							    }
 
@@ -81,7 +67,6 @@ get_header( 'shop' ); ?>
 			  $relatedProgram = get_field('related_program(s)');
 			    foreach ($relatedProgram as $programrel) {
 			      ?> <h3> <a href=" <?php echo get_the_permalink($programrel); ?> "> <?php echo get_the_title($programrel); ?></a> </h3>
-			        <p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
 			      <?php
 			    }
 			  ?>

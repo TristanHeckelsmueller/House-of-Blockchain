@@ -122,7 +122,7 @@
 .logo-trans-back{
   transition: all ease 600ms;
   padding: .8em;
-  width: 344px !important;
+  width: 344px;
 }
 .logo-trans-img-back{
   transition: all ease 600ms;
@@ -137,11 +137,6 @@
     .secondary-nav{
       display: block;
     }
-    .site-header__logo{
-      padding: .2%;
-      background: unset;
-      width: 25%;
-    }
     .site-header{
       width: 100%;
       position: fixed;
@@ -149,16 +144,25 @@
       padding: .5em 2em;
       z-index: 2;
     }
-    .site-header__logo{
-      width: 30%;
+    .logo-trans{
+      transition: all ease 600ms;
+      padding: .4em;
+      width: 20%;
+    }
+    .logo-trans-img{
+      transition: all ease 600ms;
+    }
+    .logo-trans-back{
+      transition: all ease 600ms;
+      padding: .8em;
+      width: 344px;
+    }
+    .logo-trans-img-back{
+      transition: all ease 600ms;
+      width: 100%;
     }
   }
     @media (max-width: 600px){
-      .site-header__logo{
-        padding: .2%;
-        background: unset;
-        width: 25%;
-      }
       .site-header{
         width: 100%;
         position: fixed;
@@ -168,8 +172,48 @@
       }
       .site-header__logo{
         width: 50%;
+        left: 0;
       }
       .secondary-nav__display a{
         font-size: 1.6em;
+      }
+      .logo-trans{
+        transition: all ease 600ms;
+        padding: .4em;
+        width: 40%;
+      }
+      .logo-trans-img{
+        transition: all ease 600ms;
+      }
+      .logo-trans-back{
+        transition: all ease 600ms;
+        width: 50%;
+      }
+      .logo-trans-img-back{
+        transition: all ease 600ms;
+        width: 100%;
+      }
+      .event-box{
+        display: block !important;
+      }
+    }
+    @media (max-width: 400px){
+
+      .logo-trans{
+        transition: all ease 600ms;
+        padding: .3em;
+        width: 70%;
+      }
+      .logo-trans-img{
+        transition: all ease 600ms;
+      }
+      .logo-trans-back{
+        transition: all ease 600ms;
+        padding: .3em;
+        width: 70% !important;
+      }
+      .logo-trans-img-back{
+        transition: all ease 600ms;
+        width: 100%;
       }
     }

@@ -180,7 +180,10 @@
   font-size: 1.1em;
   font-weight: 900;
 }
-
+.posted_in a{
+  margin: 2em 0;
+  font-weight: 900;
+}
 
 /* RELATED PRODUCTS */
 .related-products{
@@ -188,6 +191,10 @@
   position: relative;
   margin: 1.5em 0 .5em;
   float: left;
+  display: block;
+}
+.related-products__section{
+  display: flex;
 }
 .related-products__column{
   width: 50%;
@@ -205,7 +212,6 @@
 /* Related Tutor */
 .product__tutor__content{
   padding-left: .3em;
-  float: left;
 }
 .product__tutor__img{
   margin: 0 auto;
@@ -243,8 +249,11 @@
 }
 .product__archive__img img{
   width: 80%;
+  height: auto;
 }
-
+.product__tutor__content p{
+  margin: .2em 0 .2em;
+}
 
 /* Category Single Shop */
 .type-product{
@@ -262,12 +271,14 @@
   font-size: 1em;
 }
 
-
-
+/* Hide Related Products Section */
+.related{
+  display: none;
+}
 
 @media (max-width: 1200px) {
   .woocommerce-product-gallery{
-    width: 33%;
+    width: 50%;
   }
   .woocommerce-product-gallery img{
     width: 100%;
@@ -276,9 +287,10 @@
   .entry-summary h1{
     font-size: 1.3em;
   }
-  .entry-summary{
-    float: none;
-    width: 100%;
+  .summary{
+    float: left;
+    width: 50%;
+    position: relative;
   }
   .related-products h2{
     font-size: 1em;
@@ -286,7 +298,8 @@
   .product__related__content h3{
     font-size: .8em;
   }
-  .product__relations-col, .related-products__column, .related-products{
+
+  .product__relations-col, .related-products__column{
     float: none;
     width: 100%;
   }
@@ -317,9 +330,35 @@
   .product__tutor__content{
     width: 75%;
   }
+  .related-products{
+    width: 100%;
+  }
+  .product__related__img{
+    padding: 0 6em;
+    border-radius: 2em;
+  }
 }
 
 @media (max-width: 450px) {
+  .woocommerce-product-gallery{
+    width: 100%;
+  }
+  .related-products__section{
+    display: block;
+  }
+  #comments{
+    width: 100%;
+  }
+  #review_form_wrapper{
+    width: 100%;
+  }
+  .summary{
+    width: 100%;
+  }
+  .related-products__column{
+    float: none;
+    width: 100%;
+  }
   .product__archive__img img{
     width: 100%;
     margin: 0 auto;
@@ -333,6 +372,9 @@
     width: fit-content;
   }
   .product__tutor__content{
+    width: 100%;
+  }
+  .product__relations-col{
     width: 100%;
   }
 }

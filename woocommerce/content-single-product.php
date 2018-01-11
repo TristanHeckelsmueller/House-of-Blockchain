@@ -61,7 +61,7 @@ if ( post_password_required() ) {
 
   <div class="related-products">
     <h2>Andere Kurse die dich interessieren könnten:</h2>
-
+		<div class="related-products__section">
 
       <?php
       $productRel = new WP_Query(array(
@@ -72,6 +72,7 @@ if ( post_password_required() ) {
 
       while ($productRel->have_posts()) {
           $productRel->the_post(); ?>
+					<p>
           <div class="related-products__column">
 
 						<div class=" product__related__img">
@@ -87,7 +88,9 @@ if ( post_password_required() ) {
             	<p><?php echo wp_trim_words(get_the_content(), 25); ?></p>
 						</div>
           </div>
+					</p>
       <?php } ?>
+		</div>
   </div>
 
   <?php
