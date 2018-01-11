@@ -3,10 +3,26 @@
   <h1>Articles and Videos</h1>
   <div class="col-half-left news__archive__list">
     <h2>News:</h2>
+
     <?php
       while (have_posts()) {
         the_post(); ?>
         <h3><a href=" <?php the_permalink(); ?>"><?php the_title();?></a></h3>
+        <p class="meta-info">Posted in: <?php
+          $categories = get_the_category();
+          $seperator = "";
+          $output = '';
+          if ($categories) {
+            foreach ($categories as $category) {
+              $output .= $category->cat_name . $seperator;
+
+            }
+            echo $output;
+          }
+          ?>
+          | Posted by:
+          <?php the_author(); ?>
+        </p>
         <p><?php echo wp_trim_words(get_the_content(), 40);  ?></p>
     <?php } ?>
     <div class="clearfix"></div>

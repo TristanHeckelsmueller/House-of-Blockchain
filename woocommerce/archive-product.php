@@ -2,7 +2,6 @@
   <div class="main-content">
     <div class="col-2third-left event-col__content">
       <h1>Upcoming Courses:</h1>
-        <h2>Starter Guides:</h2>
 
     <?php
       $homepageProducts = new WP_Query(array(
@@ -12,7 +11,7 @@
         while ($homepageProducts->have_posts()) {
 
           $homepageProducts->the_post(); ?>
-          <div class="product-archive__column" style="border: 1px solid #d2d2d2;">
+          <div class="product-archive__column" style="">
             <div class="col-third-left product__archive__img">
               <?php if ( has_post_thumbnail()) : ?>
               <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
@@ -23,6 +22,28 @@
             </div>
             <div class="col-2third-right product__tutor__content">
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              <p class="meta-info">Posted in:
+                <?php
+              			  $relatedProgram = get_field('related_program(s)');
+              			    foreach ($relatedProgram as $programrel) {
+              			      ?> <a href=" <?php echo get_the_permalink($programrel); ?> "> <?php echo get_the_title($programrel); ?></a>
+              			      <?php
+              			    }
+              			  ?>
+                | Hosted by:
+                <?php
+
+  							$RelTutor = get_field('related_tutor');
+  							$tutorimg = get_field('profile_img');
+  							foreach ($RelTutor as $relationTutorproduct) {?>
+
+
+  										<a href=" <?php echo get_the_permalink($relationTutorproduct); ?> "> <?php echo get_the_title($relationTutorproduct); ?></a>
+  							      <?php
+  							    }
+
+  							  ?>
+              </p>
                 <p>Date: <strong><?php
                   $eventDate = new DateTime(get_field('event_date'));
                   echo $eventDate->format('d');
